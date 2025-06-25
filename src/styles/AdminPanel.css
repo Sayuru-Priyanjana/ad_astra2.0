@@ -1,0 +1,232 @@
+.admin-panel {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ff7b00;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(255, 123, 0, 0.5);
+}
+
+.admin-subtitle {
+  font-size: 1.25rem;
+  color: #64b5f6;
+}
+
+.admin-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .admin-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.admin-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.points-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: #64b5f6;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-select, .form-input {
+  width: 100%;
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-select:focus, .form-input:focus {
+  outline: none;
+  border-color: #ff7b00;
+  box-shadow: 0 0 0 3px rgba(255, 123, 0, 0.3);
+}
+
+.form-submit {
+  padding-top: 0.5rem;
+}
+
+.submit-button {
+  width: 100%;
+  background: linear-gradient(to right, #ff7b00, #ff5500);
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 123, 0, 0.3);
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #ff5500, #ff3c00);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 123, 0, 0.4);
+}
+
+.success-message {
+  text-align: center;
+  padding: 0.75rem;
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.team-management {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.add-team-button {
+  background: linear-gradient(to right, #2196f3, #0d8bf2);
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.add-team-button:hover {
+  background: linear-gradient(to right, #0d8bf2, #0b7ad1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+.teams-list-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.teams-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 24rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.team-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: rgba(30, 41, 59, 0.5);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.team-item:hover {
+  background: rgba(56, 189, 248, 0.1);
+  transform: translateX(5px);
+}
+
+.team-rank {
+  font-weight: 700;
+  color: #ff7b00;
+  margin-right: 0.5rem;
+}
+
+.team-name {
+  color: white;
+}
+
+.team-score {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ff7b00;
+}
+
+.empty-teams-message {
+  color: #64b5f6;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.back-button-container {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.back-button {
+  background: #2196f3;
+  color: white;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+}
+
+.back-button:hover {
+  background: #0d8bf2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(33, 150, 243, 0.4);
+}

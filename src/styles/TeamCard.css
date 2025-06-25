@@ -1,0 +1,148 @@
+.team-card {
+  display: grid;
+  grid-template-columns: 1fr 7fr 4fr;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  margin-bottom: 0.75rem;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease;
+}
+@keyframes zoom-in-out {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.015);
+    }
+}
+
+
+.team-card.top-3 {
+  padding: 1.5rem;
+  background: rgba(255, 215, 0, 0.15);
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  animation: zoom-in-out 2s ease-in-out infinite;
+}
+
+.team-card.highlighted {
+  background: rgba(255, 165, 0, 0.3);
+  border-color: rgba(255, 165, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.4);
+}
+
+.rank-container {
+  display: flex;
+  justify-content: center;
+}
+
+.rank-badge {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top-3 .rank-badge {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
+
+.rank-1 {
+  background: radial-gradient(circle at 30% 30%, #FFD700, #FFA500);
+  color: #1e293b;
+}
+
+.rank-2 {
+  background: radial-gradient(circle at 30% 30%, #C0C0C0, #A9A9A9);
+  color: #1e293b;
+}
+
+.rank-3 {
+  background: radial-gradient(circle at 30% 30%, #CD7F32, #A0522D);
+  color: white;
+}
+
+.rank-other {
+  background: radial-gradient(circle at 30% 30%, #3498db, #2980b9);
+  color: white;
+}
+
+.team-name-container {
+  overflow: hidden;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 1rem;
+}
+
+.top-3 .team-name {
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.highlighted .team-name {
+  color: #ffb74d;
+}
+
+.score-container {
+  text-align: right;
+  position: relative;
+}
+
+.score-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.top-3 .score-value {
+  font-size: 1.8rem;
+  color: #ffd700;
+}
+
+.score-label {
+  font-size: 0.875rem;
+  color: #64b5f6;
+  margin-left: 0.25rem;
+}
+
+.top-3 .score-label {
+  color: #ffd700;
+}
+
+.score-change {
+  position: absolute;
+  right: 10px;
+  top: -15px;
+  background: rgba(255, 123, 0, 0.9);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top-3 .score-change {
+  background: rgba(255, 215, 0, 0.9);
+  color: #1e293b;
+  font-size: 0.9rem;
+  padding: 3px 10px;
+}
