@@ -180,7 +180,7 @@ const Scoreboard = ({ toggleMode }) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          SEDS RUHANA NIGHT CAMP
+          ADASTRA 2.0 SEDS RUHUNA
         </motion.h1>
         <motion.h2 
           className="subtitle"
