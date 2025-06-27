@@ -200,7 +200,7 @@ const Scoreboard = ({ toggleMode }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
-          <h3 className="top-teams-title">Event 1</h3>
+          <h3 className="top-teams-title">TOP TEAMS</h3>
           <div className="top-teams-grid">
             {top3.map((team, index) => (
               <TeamCard 
